@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Justin Lam</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <span>Loading...</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">Justin Lam</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Content -->
+    <section class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row g-4">
+                <!-- Encryption/Decryption Project -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <img src="../images/encryptdecryptproject.png" class="card-img-top" alt="Encryption Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Encryption/Decryption App</h5>
+                            <p class="card-text">
+                                A secure C++ application for encrypting and decrypting sensitive data with customizable block sizes and key generation.
+                                The project includes a user-friendly interface and detailed instructions for encryption workflows.
+                            </p>
+                            <a href="../files/ecdoc.pdf" target="_blank" class="btn btn-outline-primary">View Documentation</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Discord Music Bot -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <img src="../images/pingingbot.png" class="card-img-top" alt="Discord Music Bot Screenshot">
+                        <div class="card-body">
+                            <h5 class="card-title">Discord Music Bot</h5>
+                            <p class="card-text">
+                                Developed a Discord bot using JavaScript and Node.js to facilitate music playback in Discord servers. 
+                                Implemented core commands for playback controls, such as play, pause, and skip, utilizing Discord.js for seamless interaction with Discord's API.
+                                Additionally, created a ping command to test bot responsiveness, as shown in the image.
+                                This project highlights my skills in asynchronous programming, API integration, and event-driven development.
+                            </p>
+                            <a href="https://github.com/Zeltrut/Discord-Bot-with-commands/blob/main/musicbot.js" target="_blank" class="btn btn-outline-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2018 Website Project -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <img src="../images/websiteproject.png" class="card-img-top" alt="2018 Website Project">
+                        <div class="card-body">
+                            <h5 class="card-title">2018 Website Project</h5>
+                            <p class="card-text">
+                                Designed and built a fully functional Nintendo-themed website in 2018 using HTML, CSS, and GIFs. 
+                                Features include navigation links, voting sections, and a sign-up form.
+                            </p>
+                            <a href="https://github.com/Zeltrut/Website---2018" target="_blank" class="btn btn-outline-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1">&copy; 2024 Justin Lam. All Rights Reserved.</p>
+            <p>
+                <a href="https://github.com/Zeltrut" target="_blank">GitHub</a> | 
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const loadingScreen = document.getElementById('loading-screen');
+            setTimeout(() => {
+                loadingScreen.style.display = 'none';
+            }, 0); //delay time in milliseconds
+        });
+    </script>    
+</body>
+</html>
